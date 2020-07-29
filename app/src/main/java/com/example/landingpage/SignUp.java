@@ -36,7 +36,7 @@ public class SignUp extends AppCompatActivity {
 
     private void init() {
         ccp = findViewById(R.id.ccp);
-       PhoneNumberEdit = findViewById(R.id.PhoneNumber); b
+       PhoneNumberEdit = findViewById(R.id.PhoneNumber);
     }
 
 }
