@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7ec0ee"
+    tools:context="com.example.landingpage.SignUp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7ec0ee"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <Button
+        android:layout_width="167dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="40dp"
+        android:text="Sign Up"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="100dp"
+       android:orientation="horizontal">
+
+       <EditText
+           android:id="@+id/FirstName"
+           android:layout_width="150dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+           android:inputType="text"
+           android:hint="First Name" />
+       <EditText
+           android:id="@+id/LastName"
+           android:layout_width="150dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="40dp"
+           android:hint="Last Name"
+           android:inputType="text"/>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Country Code"
+        android:layout_marginLeft="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+      <com.hbb20.CountryCodePicker
+          android:id="@+id/ccp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:textSize="16sp"
+          app:ccp_autoDetectCountry="true"
+          app:ccp_showNameCode="true"/>
+
+       <EditText
+           android:id="@+id/PhoneNumber"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="2"
+           android:maxLength="9"
+           android:hint="Phone Number"
+           android:inputType="phone"
+           android:textSize="16sp"/>
+
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By clicking 'Sign Up' you agree to our terms and conditions as well as our privacy policy"/>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="10dp" />
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
